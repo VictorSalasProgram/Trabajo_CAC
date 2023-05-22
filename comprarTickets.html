@@ -11,7 +11,7 @@
 <div>
    <!--Empieza la navbar-->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbarprincipal">
-    <a href="#"><img src="/Trabajo_CAC/imagenes/codoacodo.png" width="100" height="70" class="d-inline-block align-top" alt="logo de codo a codo"></a>
+    <a href="index.html"><img src="/Trabajo_CAC/imagenes/codoacodo.png" width="100" height="70" class="d-inline-block align-top" alt="logo de codo a codo"></a>
     <a class="navbar-brand" href="#">Conf Bs As</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -81,7 +81,7 @@
         <div class="form-row justify-content-center">
         <div class="form-group col-md-4">
             
-            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" >
         </div>
         <div class="form-group col-md-4">
             
@@ -99,24 +99,24 @@
                 <input type="text" class="form-control" id="inputCantidad">
             </div>
             <div class="form-group col-md-4">
-                <label for="inputState">Categoria</label>
-                <select id="inputState" class="form-control">
-                    <option selected>Estudiante</option>
-                    <option>Trainee</option>
-                    <option>Junior</option>
+                <label for="inputCategoria">Categoria</label>
+                <select id="inputCategoria" class="form-control">
+                    <option selected value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
                 </select>
             </div>
             
         </div>
         <div class="form-row justify-content-center">
         <div class="form-group col-md-8" >
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Total a pagar">
+          <input type="text" class="form-control" id="inputTotal" placeholder="Total a pagar" readonly="true">
         </div>
         </div>
         </div>
         <div class="form-row justify-content-center">
-        <button type="submit" class="btn_borrar">Borrar</button>
-        <button type="submit" class="btnresumen">Resumen</button>
+        <button type="button" onclick="borrarCampos()"  class="btn_borrar">Borrar</button>
+        <button type="button" onclick="calcularResumen();mostrarResumen();" class="btnresumen">Resumen</button>
         </div>
       </form>
 </div>
