@@ -16,13 +16,14 @@ function borrarCampos(){
     document.getElementById("inputEmail").value = "";
     document.getElementById("inputCantidad").value = "";
     document.getElementById("inputTotal").value = "";
+    
 
 
 
 };
 
 function calcularResumen(){
-      
+    
         let cantidad= parseInt(document.getElementById("inputCantidad").value);
         let categoria = document.getElementById("inputCategoria").value; 
         let valor = 200;
